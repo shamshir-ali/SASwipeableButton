@@ -5,7 +5,7 @@
 //  Created by Shamshair on 04/04/2022.
 //
 import UIKit
-protocol SASwipeableButtonDelegate: class {
+protocol SASwipeableButtonDelegate: AnyObject {
     func swipableButtonSelected(_ isSelected: Bool)
 }
 public class SASwipeableButton: UIView {
