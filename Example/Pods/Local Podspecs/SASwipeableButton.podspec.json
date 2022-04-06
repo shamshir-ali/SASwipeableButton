@@ -1,0 +1,22 @@
+{
+  "name": "SASwipeableButton",
+  "version": "0.1.0",
+  "summary": "A short description of SASwipeableButton.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shamshir-ali/SASwipeableButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shamshir-ali": "alishaamrao@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shamshir-ali/SASwipeableButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SASwipeableButton/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module SASwipeableButton {
+  umbrella header "SASwipeableButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

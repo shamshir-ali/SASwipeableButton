@@ -1,0 +1,6 @@
+framework module Pods_SASwipeableButton_Example {
+  umbrella header "Pods-SASwipeableButton_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

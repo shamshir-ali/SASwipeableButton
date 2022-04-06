@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SASwipeableButton'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SASwipeableButton.'
+  s.summary          = 'Swipe the switch button in a more smooth and attractive way.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'SASwipeableButton utility gives an exciting user experience to the swtich button swiping feature. It gives the opportunity to the developers to set the custom icons on the ON and OFF states. A smooth animation while interacting with the swipeable button makes it more attractive and user-friendly.'
                        DESC
 
   s.homepage         = 'https://github.com/shamshir-ali/SASwipeableButton'
@@ -31,7 +31,10 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'SASwipeableButton/Classes/**/*'
-  
+  s.swift_version = '5.0'
+  s.platforms = {
+       "ios":"15.0"
+   }
   # s.resource_bundles = {
   #   'SASwipeableButton' => ['SASwipeableButton/Assets/*.png']
   # }

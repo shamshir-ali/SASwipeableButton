@@ -7,18 +7,40 @@
 //
 
 import UIKit
-
+import SASwipeableButton
 class ViewController: UIViewController {
 
+    @IBOutlet weak var swipeableBtn: SASwipeableButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        configureSwipeableButton()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//    Configure swipeable button settings.
+    func configureSwipeableButton() {
+        setColors()
+        setIcons()
+        setLabels()
+        
     }
+    func setColors(){
+//        Set color theme
+        swipeableBtn.headActiveColor = .gray
+        swipeableBtn.headInctiveColor = .orange
+        swipeableBtn.trackActiveColor = .orange
+        swipeableBtn.trackInctiveColor = .gray
+    }
+    
+    func setIcons() {
+//        Set icons
+        swipeableBtn.imageInactive = UIImage(named: "outline_lock")
+        swipeableBtn.imageActive = UIImage(named: "outline_unlock")
+    }
+    func setLabels() {
+//        Set labels
+        swipeableBtn.textInactive = "Swipe to unlock"
+        swipeableBtn.textActive = "Swipe to lock"
+    }
+    
 
 }
 

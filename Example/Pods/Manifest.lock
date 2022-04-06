@@ -1,0 +1,16 @@
+PODS:
+  - SASwipeableButton (0.1.0)
+
+DEPENDENCIES:
+  - SASwipeableButton (from `../`)
+
+EXTERNAL SOURCES:
+  SASwipeableButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SASwipeableButton: c32ba5b537d426ba12f0cf5fbd7e80d54a13c09c
+
+PODFILE CHECKSUM: 1f98c1d2ad1edee93141325888d01b3423b75640
+
+COCOAPODS: 1.11.2

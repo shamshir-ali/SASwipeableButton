@@ -9,7 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -18,6 +17,60 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SASwipeableButton'
+```
+
+## Screenshots
+SASwipeable enables the developers to set all the paramerters from storyboard.
+
+![Configurations](https://s3.eu-north-1.amazonaws.com/saswipeable.resources/configurations.png)
+
+
+## Demo
+
+![Configurations](https://s3.eu-north-1.amazonaws.com/saswipeable.resources/saswipeableanim.gif)
+
+
+## Usage/Examples
+
+```swift
+import SASwipeableButton
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var swipeableBtn: SASwipeableButton!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureSwipeableButton()
+    }
+//    Configure swipeable button settings.
+    func configureSwipeableButton() {
+        setColors()
+        setIcons()
+        setLabels()
+        
+    }
+    func setColors(){
+//        Set color theme
+        swipeableBtn.headActiveColor = .gray
+        swipeableBtn.headInctiveColor = .orange
+        swipeableBtn.trackActiveColor = .orange
+        swipeableBtn.trackInctiveColor = .gray
+    }
+    
+    func setIcons() {
+//        Set icons
+//        Add your own icons in project before you use it.
+        swipeableBtn.imageInactive = UIImage(named: "outline_lock")
+        swipeableBtn.imageActive = UIImage(named: "outline_unlock")
+    }
+    func setLabels() {
+//        Set labels
+        swipeableBtn.textInactive = "Swipe to unlock"
+        swipeableBtn.textActive = "Swipe to lock"
+    }
+    
+
+}
 ```
 
 ## Author
